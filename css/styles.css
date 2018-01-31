@@ -1,14 +1,47 @@
+/*
+General */
+
+h1, h2, h3, h4 {
+  font-family: 'Kreon', serif;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/***************************************************  */
+
+
+/* Header Nav styles */
+
+
+/*****************************************************  */
 header {
-    height: 150px;
-    width: 100%
+    height: 100px;
+    width: 100%;
+}
+
+
+header .logo {
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #a9a9a9;
+
 }
 
-header .logo {
-    
+.header-container a {
+  font-size: 20px;
+  color: white;
 }
+
+/* *************************************** */
+
+/* mobile */
+
+/* **************************************** */
