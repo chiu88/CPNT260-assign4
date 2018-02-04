@@ -5,12 +5,18 @@ General */
   background-color: #a9a9a9;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Kreon', serif;
 }
 
 p {
   font-family: 'Ubuntu', sans-serif;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 14px;
+  }
 }
 
 main {
@@ -34,6 +40,8 @@ header {
     width: 100%;
     background-color: #caebf2;
 }
+
+
 
 
 
@@ -76,7 +84,7 @@ header {
 
 footer {
     border-top: 2px solid black;
-    height: 150px;
+    height: 100px;
     background-color: #caebf2;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -84,11 +92,11 @@ footer {
 
 footer h3 {
     text-align: center;
-    padding-top: 20px;
+
 }
 
 .follow-container {
-    margin-top: 20px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -160,7 +168,7 @@ footer h3 {
 
 /* *************************************** */
 
-/* Hero-Home */
+/* Hero*/
 
 /* **************************************** */
 
@@ -506,4 +514,57 @@ footer h3 {
 
 .product-page-6 {
   background-image: url('../img/product-6.jpg');
+}
+
+/*************************************************************/
+
+
+
+/* About Page */
+
+
+
+
+/*************************************************************/
+
+.about-page {
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0;
+
+}
+
+.about-page-image {
+  height: 200px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url('../img/about-page.jpg');
+  background-size: cover;
+}
+
+.about-page-description {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.about-page-description h1 {
+  text-align: center;
+}
+
+.about-page-description p {
+  padding-top: 30px;
+}
+
+@media (max-width: 600px) {
+
+  .about-page {
+    width: 100%;
+  }
+
+
+  .about-page-description {
+    width: 100%;
+  }
+
 }
