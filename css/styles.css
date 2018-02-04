@@ -1,6 +1,10 @@
 /*
 General */
 
+.wrapper {
+  background-color: #a9a9a9;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Kreon', serif;
 }
@@ -8,6 +12,24 @@ h1, h2, h3, h4 {
 p {
   font-family: 'Ubuntu', sans-serif;
 }
+
+main {
+  background-color: #efefef;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+hr {
+  margin-top: 80px;
+}
+
+a {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
 
 /***************************************************  */
 
@@ -17,7 +39,7 @@ p {
 
 /*****************************************************  */
 header {
-    height: 100px;
+    height: 80px;
     width: 100%;
 }
 
@@ -31,14 +53,12 @@ header .logo {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #a9a9a9;
+  background-color: #ff3b3f;
 
 }
 
 .header-container a {
   font-size: 20px;
-  color: white;
-  font-family: 'Kreon', serif;
 }
 
 
@@ -53,7 +73,7 @@ header .logo {
 
 /* *************************************** */
 
-/* Hero */
+/* Hero-Home */
 
 /* **************************************** */
 
@@ -61,16 +81,20 @@ header .logo {
   height: 100%;
   width: 100%;
   position: relative;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 0 auto;
+
 
 }
 
 .hero {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   background: linear-gradient(
     to bottom,
     rgba(255,0,0, 0),
-    rgba(255,59,63, 0.3)
+    rgba(202, 235, 242, 0.2)
   ),url('../img/hero-image.jpg');
   background-size: cover;
   background-position: center;
@@ -89,8 +113,160 @@ header .logo {
 
 }
 
+.buy-container {
+  background-color: white;
+  width: 100px;
+  margin: auto;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
 /* *************************************** */
 
-/* Main - Products */
+/* Products/About-Home */
+
+/* **************************************** */
+
+
+
+.products {
+  height: 100%;
+  width: 100%;
+
+
+}
+
+.products h2 {
+  padding: 60px;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.products-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+.products-image-container {
+  height: 200px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 10px #888888;
+}
+
+
+
+.products-image{
+  height: 100%;
+  background-image: url('../img/products.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  display: flex;
+}
+
+
+
+
+
+.products-image-description {
+  background-color: black;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 105px;
+  transform: translateY(60px);
+  transition: .2s;
+}
+
+
+.products-image-container:hover .products-image-description {
+  transform: translateY(0);
+}
+
+
+
+.products-description {
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* *************************************** */
+
+/* About-Home */
+
+/* **************************************** */
+
+.about {
+  height: 100%;
+  width: 100%;
+}
+
+.about h2 {
+  padding: 60px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+.about-image {
+  height: 100%;
+  background-image: url('../img/about_us.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  display: flex;
+}
+
+.about-image-container {
+  height: 300px;
+  width: 600px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 10px #888888;
+}
+
+.about-image-description {
+  background-color: white;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 260px;
+  transform: translateY(60px);
+  transition: .2s;
+}
+
+.about-image-container:hover .about-image-description {
+  transform: translateY(0);
+}
+
+.about-description {
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* *************************************** */
+
+/* Contact Us-Home */
 
 /* **************************************** */
