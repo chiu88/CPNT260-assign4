@@ -53,7 +53,9 @@ header .logo {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #ff3b3f;
+  background-color: #caebf2;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 
 }
 
@@ -61,14 +63,49 @@ header .logo {
   font-size: 20px;
 }
 
+/***************************************************  */
+
+
+/* Footer styles */
+
+
+/*****************************************************  */
+
+
+footer {
+    border-top: 2px solid black;
+    height: 150px;
+    background-color: #caebf2;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+footer h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.follow-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.follow-container a{
+  color: #ff3b3f;
+}
 
 /* *************************************** */
 
-/* mobile */
+/* mobile-nav */
 
 /* **************************************** */
 
+@media (max-width: 600px) {
 
+}
 
 
 /* *************************************** */
@@ -82,7 +119,7 @@ header .logo {
   width: 100%;
   position: relative;
   border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   margin: 0 auto;
 
 
@@ -178,14 +215,19 @@ header .logo {
 
 
 .products-image-description {
-  background-color: black;
+  background-color: white;
   border-radius: 2px;
   position: absolute;
   bottom: 0;
-  left: 105px;
+  height: 40px;
+  width: 100%;
+  text-align: center;
   transform: translateY(60px);
   transition: .2s;
+  padding-top: 8px;
+  border: 1px solid black;
 }
+
 
 
 .products-image-container:hover .products-image-description {
@@ -227,6 +269,14 @@ header .logo {
 
 }
 
+.about-image-container {
+  height: 300px;
+  width: 600px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 10px #888888;
+}
+
 .about-image {
   height: 100%;
   background-image: url('../img/about_us.jpg');
@@ -237,22 +287,19 @@ header .logo {
   display: flex;
 }
 
-.about-image-container {
-  height: 300px;
-  width: 600px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 5px 10px #888888;
-}
+
 
 .about-image-description {
   background-color: white;
-  border-radius: 2px;
   position: absolute;
+  height: 40px;
+  width: 100%;
   bottom: 0;
-  left: 260px;
+  padding-top: 8px;
+  border: 1px solid black;
   transform: translateY(60px);
   transition: .2s;
+  text-align: center;
 }
 
 .about-image-container:hover .about-image-description {
@@ -270,3 +317,70 @@ header .logo {
 /* Contact Us-Home */
 
 /* **************************************** */
+.contact {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.contact h2 {
+  padding: 60px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+.contact-image-container {
+  height: 400px;
+  width: 800px;
+  position: relative;
+  box-shadow: 5px 10px #888888;
+  overflow: hidden;
+}
+
+.contact-image {
+  height: 100%;
+  background-image: url('../img/contact.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  display: flex;
+}
+
+.contact-button-container {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  padding-bottom: 150px;
+}
+
+.contact-button {
+  background-color: #efefef;
+  font-size: 28px;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: .2s;
+
+}
+
+.contact-image-container:hover .contact-button {
+  transform: translateY(0);
+  opacity: 1;
+}
