@@ -580,8 +580,14 @@ footer h3 {
 
 /*************************************************************/
 
+.contact-page p {
+  font-size: 24px;
+}
+
 .contact-page {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
