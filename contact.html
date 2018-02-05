@@ -14,6 +14,7 @@
     <body>
       <div class="wrapper">
 
+        <!-- Header -->
 
         <header>
             <div class="header-container desktop-nav">
@@ -22,18 +23,20 @@
                 <a href="./index.html">Home</a>
                 <a href="./products.html">Products</a>
                 <a href="./about.html">About</a>
-                <a href="./contact.html">Contact</a>
+                <a href=".contact.html">Contact</a>
 
                 <input type="text" placeholder="Search..">
 
             </div>
+
+            <!-- mobile menu and mobile nav -->
 
             <div class="mobile-menu" id='mobile-menu'>
                 <button class="close-button" id="close-mobile-menu-button">Close</button>
                 <a href="./index.html">Home</a>
                 <a href="./products.html">Products</a>
                 <a href="./about.html">About</a>
-                <a href=".contact.html">Contact</a>
+                <a href="./contact.html">Contact</a>
             </div>
 
             <div class="mobile-nav">
@@ -50,69 +53,49 @@
 
         </header>
 
+
+        <!-- Hero section -->
+
         <div class="hero-container">
           <section class="hero">
             <div class="hero-description-container">
-              <h1>Products</h1>
+              <h1>Contact Us</h1>
             </div>
           </section>
         </div>
 
         <main>
-          <section class="main-product-page-container">
-            <div class="product-page-container">
-              <div class="product-page product-page-1"></div>
-              <div class="product-page-description-container">
-                <h1>Galaxy S8</h1>
-                <h3>Brand: Samsung</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-            </div>
-            <div class="product-page-container">
-              <div class="product-page product-page-2"></div>
-              <div class="product-page-description-container">
-                <h1>iPhone X</h1>
-                <h3>Brand: Apple</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-            </div>
-            <div class="product-page-container">
-              <div class="product-page product-page-3"></div>
-              <div class="product-page-description-container">
-                <h1>Pixel 2XL</h1>
-                <h3>Brand: Google</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-            </div>
-            <div class="product-page-container">
-              <div class="product-page product-page-4"></div>
-              <div class="product-page-description-container">
-                <h1>OnePlus 5T</h1>
-                <h3>Brand: OnePlus</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-            </div>
-            <div class="product-page-container">
-              <div class="product-page product-page-5"></div>
-              <div class="product-page-description-container">
-                <h1>Z2 Play</h1>
-                <h3>Brand: Motorola</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-            </div>
-            <div class="product-page-container product-page-container6">
-              <div class="product-page product-page-6"></div>
-              <div class="product-page-description-container">
-                <h1>Huawei P10</h1>
-                <h3>Brand: Huawei</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-            </div>
 
+          <section class="contact-page">
+            <form>
+              <!-- field set puts a border around the related elements in the tag, used for grouping form elements together -->
+              <fieldset>
+                <!-- text input -->
+                <label for="first-name">First Name</label>
+                <br>
+                <input type="text" name="first-name" id="first-name" placeholder="Example: John">
+                <br>
+                <label for="last-name">Last Name</label>
+                <br>
+                <input type="text" name="last-name" id="last-name" placeholder="Example: Smith">
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id=email placeholder="Enter email address">
+                <br>
+                <label>Ask Us Anything</label>
+                <br>
+                <textarea name="comments"></textarea>
+                <br>
+                <button class="submit" type="submit" name="submit">Submit</button>
+              </field>
 
+            </form>
           </section>
 
         </main>
+
+        <!-- footer -->
 
         <footer>
             <h3>Follow Us:</h3>
